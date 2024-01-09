@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  
+  <title>Mobile view</title>
+  
+  <style>
+    body{
+      background-color: hsl(30, 38%, 92%);
+      width: 375px;
+    }
+   .card {
+  width: auto; /* Set your desired width */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 8% 4% 0% 4%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.description {
+  padding: 15px;
+  background-color: white;
+  font-size : 14px;
+}
+p{
+  font-family: 'Montserrat', sans-serif;
+  
+}
+heading{
+font-family: 'Fraunces', serif;
+font-weight: 700px;
+margin-left: 10%;
+margin-right: 10%;
+font-size: 16px;
+}
+.perfume{
+  color: gray;
+  letter-spacing: 3px;
+}
+.text{
+  color: gray;
+  line-height: 1.4rem;
+  max-width: 300px;
+}
+.price{
+  font-family: 'Fraunces', serif;
+color: #3d8168;
+font-weight: 700;
+
+}
+.inline-text{
+  display: inline;
+}
+.old{
+  text-decoration: line-through;
+  margin-left: 25px;
+}
+button{
+  color:white;
+  text-align: center;
+  background-color: #3d8168;
+  border: 1px solid #3d8168;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 4% 22% 4% 22%;
+  margin: 5% 4% 0 4%;
+}
+h1{
+  max-width: 250px;
+}
+.cart{
+  width: 25px;
+  height: 25px;
+}
+
+  </style>
+</head>
+<body>
+<div class="card">
+  <img src="image-product-mobile.jpg" alt="Card Image">
+  <div class="description">
+    <p class="perfume">PERFUME</p>
+    <h1 class="heading">Gabrielle Essence
+      Eau De Parfum</h1>
+  <p class="text">A floral, solar and voluptuous
+    interpretation composed by Olivier
+    Polge, Perfumer-Creator for the House of
+    CHANEL.</p>
+  <span>
+  <h1 class="price inline-text">$149.99</h1>
+  <p class="inline-text text old">$169.99</p>
+</span>
+<div><button class="inline-text"><img src="pngfind.com-cart-icon-png-1434613.png" class="cart inline-text" >Add to cart</button></div>
+
+  </div>
+</div>
+
+</body>
+</html>
