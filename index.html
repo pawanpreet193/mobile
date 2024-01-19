@@ -51,6 +51,11 @@ font-weight: 700;
 .inline-text{
   display: inline;
 }
+#button{
+  display:flex;
+  justify-content: center;
+  align-content: center;
+}
 .old{
   text-decoration: line-through;
   margin-left: 25px;
@@ -64,18 +69,31 @@ button{
   font-weight: 700;
   border-radius: 10px;
   padding: 4% 22% 4% 22%;
-  margin: 5% 4% 0 4%;
+  margin-top: 5%;
+  /* margin: 5% 4% 0 4%; */
+}
+.container{
+  display:flex;
+  justify-content: center;
+  align-self: center;
 }
 h1{
-  max-width: 250px;
+  max-width: 85%;
 }
 .cart{
+  /* display: flex;
+  align-content: center; */
   width: 25px;
   height: 25px;
 }
+.container{
+  display:flex;
+  justify-content: center;
+  align-content: center;
+}
 @media only screen and (max-width:480px){
     #box{
-     width:78.12%;   
+  width:78.12%;   
   width: auto; /* Set your desired width */
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -90,33 +108,42 @@ h1{
 }
     }
 
-
-@media only screen and (min-width:400px) and (max-width: 2000px){
+@media only screen and (min-width:481px) and (max-width:768px) {
     #box{
-            width:auto;
+      display: none;
+    }
+   
+}
+@media only screen and (min-width:769px){
+    #box{   
+          /* display:flex;
+          justify-content: center;
+          align-content: center; */
+            width:42.5%;
+            height: 52.5%;
             display:grid;
             grid-template-columns: 1fr 1fr;
             border: 1px solid #ccc;
             border-radius: 12px;
             overflow:hidden;
-            width: auto;
-            height: 510px;
+            /* height: 510px; */
             background-color: white;
             margin: 10% 25% 10% 25%; 
     }
     
 }
 
-@media only screen and (min-width:400px) and (max-width: 2000px){
+@media only screen and (min-width:769px) and (max-width: 2000px){
     #photo{ 
-     width: 340px;
-     height: 510px;
+     width: 100%;
+     height: 100%;
     }
 }
 </style>
 
 </head>
 <body>
+  <div class="container">
     <div class="card grid-container" id="box">
   <img src="image-product-mobile.jpg" alt="Card Image" id="photo">
   <div class="description">
@@ -131,9 +158,10 @@ h1{
   <h1 class="price inline-text">$149.99</h1>
   <p class="inline-text text old">$169.99</p>
 </span>
-<div><button class="inline-text"><img src="pngfind.com-cart-icon-png-1434613.png" class="cart inline-text" >Add to cart</button></div>
+<div class="container"><button class="inline-text" id="button"><img src="find.com-cart-icon-png-1434613.png" class="cart inline-text" >Add to cart</button></div>
 
   </div>
+</div>
 </div>
 </body>
 </html>
