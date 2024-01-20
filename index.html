@@ -108,19 +108,51 @@ h1{
 }
     }
 
-@media only screen and (min-width:481px) and (max-width:768px) {
-    #box{
-      display: none;
+@media only screen and (min-width:761px) and (max-width:1024px) {
+  
+  
+  #box{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      width: 50%;
+      height: 45%;
+      border: 1px solid #ccc;
+      overflow: hidden;
+      border-radius: 12px;
+      margin: 10% 25% 10% 25%;
     }
+    #photo{
+      width:100%;
+      height:100%;
+    }
+
+    
    
 }
-@media only screen and (min-width:769px){
+@media only screen and (min-width: 481px) and (max-width: 760px) {
+    #box{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      width:65%;
+      height:45%;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      overflow: hidden;
+      margin: 10% 20% 10% 20%;
+    }
+    #photo{
+      width:100%;
+      height:100%;
+    }
+
+}
+@media only screen and (min-width:1024px){
     #box{   
           /* display:flex;
           justify-content: center;
           align-content: center; */
             width:42.5%;
-            height: 52.5%;
+            height: 56.5%;
             display:grid;
             grid-template-columns: 1fr 1fr;
             border: 1px solid #ccc;
